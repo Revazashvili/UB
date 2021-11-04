@@ -1,0 +1,13 @@
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\bin\Debug\net6.0\ProviderConnector.Core.Models.deps.json
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\bin\Debug\net6.0\ProviderConnector.Core.Models.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\bin\Debug\net6.0\ref\ProviderConnector.Core.Models.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\bin\Debug\net6.0\ProviderConnector.Core.Models.pdb
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.GlobalUsings.g.cs
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.csproj.AssemblyReference.cache
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.AssemblyInfoInputs.cache
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.AssemblyInfo.cs
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.csproj.CoreCompileInputs.cache
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ref\ProviderConnector.Core.Models.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Core\ProviderConnector.Core.Models\obj\Debug\net6.0\ProviderConnector.Core.Models.pdb

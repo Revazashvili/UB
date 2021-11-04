@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProviderConnector.App.DemoClient/1.0.0": {
+        "dependencies": {
+          "ProviderConnector.Infrastructure.Strategies": "1.0.0",
+          "ProviderConnector.Strategies": "1.0.0"
+        },
+        "runtime": {
+          "ProviderConnector.App.DemoClient.dll": {}
+        }
+      },
+      "ProviderConnector.Core.Models/1.0.0": {
+        "runtime": {
+          "ProviderConnector.Core.Models.dll": {}
+        }
+      },
+      "ProviderConnector.Core.Providers/1.0.0": {
+        "dependencies": {
+          "ProviderConnector.Core.Models": "1.0.0"
+        },
+        "runtime": {
+          "ProviderConnector.Core.Providers.dll": {}
+        }
+      },
+      "ProviderConnector.Infrastructure.Strategies/1.0.0": {
+        "dependencies": {
+          "ProviderConnector.Core.Models": "1.0.0",
+          "ProviderConnector.Core.Providers": "1.0.0"
+        },
+        "runtime": {
+          "ProviderConnector.Infrastructure.Strategies.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProviderConnector.App.DemoClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProviderConnector.Core.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProviderConnector.Core.Providers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProviderConnector.Infrastructure.Strategies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
