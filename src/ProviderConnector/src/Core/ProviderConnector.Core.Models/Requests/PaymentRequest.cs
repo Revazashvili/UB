@@ -1,6 +1,10 @@
 ﻿namespace ProviderConnector.Core.Models.Requests;
+using Common;
 
-public class PaymentRequest : Request
+/// <summary>
+/// Payment request model.
+/// </summary>
+public class PaymentRequest : Base
 {
     /// <summary>
     /// Gets or sets payment identifier.

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ns1wV/d2Rd4S0CsGxvjAhH0nlklyifqyjmM6E5n0ZtcvBuN3FiqwRRNv25r4xomuyR6rL9j5mVChehaGTEA66w==",
+  "dgSpecHash": "ILUNfGS9MPCsaCL15Moy2oVpj1BhR7AGJzm7VGyc9xxvBZgXTy9HEhSolxUm5gaEz/WRoKQY/l2YBi8RT+oJdA==",
   "success": false,
   "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\App\\ProviderConnector.App.DemoClient\\ProviderConnector.App.DemoClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\levan\\.nuget\\packages\\forbid\\1.0.4\\forbid.1.0.4.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1104",

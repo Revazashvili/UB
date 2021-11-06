@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using ProviderConnector.Core.Models.Contracts;
 using ProviderConnector.Core.Models.Requests;
+using ProviderConnector.Core.Models.Responses;
 using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Factory;
 
 namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy

@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using ProviderConnector.Core.Models.Contracts;
 using ProviderConnector.Core.Models.Requests;
 using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Factory;
 using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
