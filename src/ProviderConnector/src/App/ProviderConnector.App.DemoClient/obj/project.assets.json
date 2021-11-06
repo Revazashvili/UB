@@ -41,6 +41,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Forbid": "1.0.4",
           "ProviderConnector.Core.Models": "1.0.0",
           "ProviderConnector.Core.Providers": "1.0.0"
         },

@@ -1,27 +1,29 @@
-﻿using System;
-using System.Threading.Tasks;
-using ProviderConnector.Core.Models.Requests;
-using ProviderConnector.Core.Models.Responses;
-using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Factory;
+﻿namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
+using Forbids;
+using Core.Models.Requests;
+using Core.Models.Responses;
+using Exceptions;
+using Factory;
 
-namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy
+public class GetBalanceStrategy : IGetBalanceStrategy
 {
-    public class GetBalanceStrategy : IGetBalanceStrategy
+    private readonly IProviderFactory _providerFactory;
+
+    public GetBalanceStrategy(IProviderFactory providerFactory) => _providerFactory = providerFactory;
+
+    public async ValueTask<IEnumerable<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest getBalanceRequest)
     {
-        private readonly ICommonProviderFactory _commonProviderFactory;
-
-        public GetBalanceStrategy(ICommonProviderFactory commonProviderFactory)
+        try
         {
-            _commonProviderFactory = commonProviderFactory;
-        }
-
-        public async ValueTask<Balance> GetBalanceAsync(GetBalanceRequest getBalanceRequest)
-        {
-            var providers = await _commonProviderFactory.GetCommonProvidersAsync();
+            var providers = await _providerFactory.GetCommonProvidersAsync();
             var provider = providers[getBalanceRequest.ProviderId];
-            if (provider == null)
-                throw new ArgumentNullException("No Provider Can't be found with provided id.");
+            Forbid.From.Null(provider, new ProviderNotFoundException());
             return await provider.GetBalanceAsync(getBalanceRequest);
+        }
+        catch (Exception exception)
+        {
+            //TODO:log exception
+            return Enumerable.Empty<GetBalanceResponse>();
         }
     }
 }

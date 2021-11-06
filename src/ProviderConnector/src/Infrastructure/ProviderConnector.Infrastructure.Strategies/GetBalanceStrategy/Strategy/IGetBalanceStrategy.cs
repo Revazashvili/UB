@@ -1,11 +1,10 @@
-﻿using System.Threading.Tasks;
-using ProviderConnector.Core.Models.Requests;
-using ProviderConnector.Core.Models.Responses;
+﻿namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
+using System.Threading.Tasks;
+using Core.Models.Requests;
+using Core.Models.Responses;
 
-namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy
+
+public interface IGetBalanceStrategy
 {
-    public interface IGetBalanceStrategy
-    {
-        ValueTask<Balance> GetBalanceAsync(GetBalanceRequest getBalanceRequest);
-    }
+    ValueTask<IEnumerable<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest getBalanceRequest);
 }

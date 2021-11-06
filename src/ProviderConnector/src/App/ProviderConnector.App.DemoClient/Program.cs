@@ -1,17 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System;
-using System.Collections.Generic;
 using ProviderConnector.Core.Models.Requests;
 using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Factory;
 using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
 
 Console.WriteLine("Hello, World!");
-ICommonProviderFactory commonProviderFactory = new CommonProviderFactory();
+IProviderFactory commonProviderFactory = new ProviderFactory();
 IGetBalanceStrategy getBalanceStrategy = new GetBalanceStrategy(commonProviderFactory);
 var balance = await getBalanceStrategy.GetBalanceAsync(new GetBalanceRequest
 {
     ProviderId = 7016,
 });
-
-Console.WriteLine($"Abonent: {balance.Abonent} Amount: {balance.Amount}");

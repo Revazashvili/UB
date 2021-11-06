@@ -4,8 +4,8 @@ using ProviderConnector.Core.Models.Common;
 
 namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Factory
 {
-    public interface ICommonProviderFactory
+    public interface IProviderFactory
     {
-        ValueTask<Dictionary<int,ICommonProvider>> GetCommonProvidersAsync();
+        ValueTask<Dictionary<int,IProvider>> GetCommonProvidersAsync();
     }
 }

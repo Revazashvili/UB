@@ -11,4 +11,8 @@
       <ProjectReference Include="..\..\Core\ProviderConnector.Core.Providers\ProviderConnector.Core.Providers.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Forbid" Version="1.0.4" />
+    </ItemGroup>
+
 </Project>
