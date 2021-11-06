@@ -13,10 +13,6 @@ IGetBalanceStrategy getBalanceStrategy = new GetBalanceStrategy(commonProviderFa
 var balance = await getBalanceStrategy.GetBalanceAsync(new GetBalanceRequest
 {
     ProviderId = 7016,
-    Parameters = new List<Parameter>
-    {
-        new("param1","2831928")
-    }
 });
 
 Console.WriteLine($"Abonent: {balance.Abonent} Amount: {balance.Amount}");

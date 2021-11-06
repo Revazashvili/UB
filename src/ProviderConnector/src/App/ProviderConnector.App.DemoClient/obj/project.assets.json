@@ -2,16 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "ProviderConnector.Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ProviderConnector.Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProviderConnector.Contracts.dll": {}
-        }
-      },
       "ProviderConnector.Core.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -48,42 +38,10 @@
         "runtime": {
           "bin/placeholder/ProviderConnector.Infrastructure.Strategies.dll": {}
         }
-      },
-      "ProviderConnector.Providers/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ProviderConnector.Contracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProviderConnector.Providers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProviderConnector.Providers.dll": {}
-        }
-      },
-      "ProviderConnector.Strategies/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ProviderConnector.Contracts": "1.0.0",
-          "ProviderConnector.Providers": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProviderConnector.Strategies.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProviderConnector.Strategies.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "ProviderConnector.Contracts/1.0.0": {
-      "type": "project",
-      "path": "../../ProviderConnector.Contracts/ProviderConnector.Contracts.csproj",
-      "msbuildProject": "../../ProviderConnector.Contracts/ProviderConnector.Contracts.csproj"
-    },
     "ProviderConnector.Core.Models/1.0.0": {
       "type": "project",
       "path": "../../Core/ProviderConnector.Core.Models/ProviderConnector.Core.Models.csproj",
@@ -98,28 +56,18 @@
       "type": "project",
       "path": "../../Infrastructure/ProviderConnector.Infrastructure.Strategies/ProviderConnector.Infrastructure.Strategies.csproj",
       "msbuildProject": "../../Infrastructure/ProviderConnector.Infrastructure.Strategies/ProviderConnector.Infrastructure.Strategies.csproj"
-    },
-    "ProviderConnector.Providers/1.0.0": {
-      "type": "project",
-      "path": "../../ProviderConnector.Providers/ProviderConnector.Providers.csproj",
-      "msbuildProject": "../../ProviderConnector.Providers/ProviderConnector.Providers.csproj"
-    },
-    "ProviderConnector.Strategies/1.0.0": {
-      "type": "project",
-      "path": "../../ProviderConnector.Strategies/ProviderConnector.Strategies.csproj",
-      "msbuildProject": "../../ProviderConnector.Strategies/ProviderConnector.Strategies.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ProviderConnector.Infrastructure.Strategies >= 1.0.0",
-      "ProviderConnector.Strategies >= 1.0.0"
+      "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
+      "ProviderConnector.Infrastructure.Strategies >= 1.0.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\levan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
@@ -132,7 +80,7 @@
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
         "C:\\Users\\levan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -188,5 +136,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

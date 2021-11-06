@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.App.DemoC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.Strategies", "src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\ProviderConnector.Infrastructure.Strategies.csproj", "{716762D1-8C4A-460B-AF8E-3D788CDD1AC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.Builders", "src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Builders\ProviderConnector.Infrastructure.Builders.csproj", "{EF4DCE9E-9A92-4B33-85EE-6C614203C478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,7 @@ Global
 		{1AE4D934-3F5B-45CF-BD4A-BE8ED9CBF254} = {47DCE681-63C6-481D-BAFA-6D4BC8239585}
 		{FE4589A0-AE34-4A5E-9A64-C0DB7EDB97E2} = {315562C2-03D1-4388-A0E6-2028351CAE93}
 		{716762D1-8C4A-460B-AF8E-3D788CDD1AC4} = {B9DAE29B-D22B-4F00-95C2-22329778EA42}
+		{EF4DCE9E-9A92-4B33-85EE-6C614203C478} = {B9DAE29B-D22B-4F00-95C2-22329778EA42}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{25A24DF0-F39E-46AA-9A12-DDC970D9977B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -53,5 +56,9 @@ Global
 		{716762D1-8C4A-460B-AF8E-3D788CDD1AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{716762D1-8C4A-460B-AF8E-3D788CDD1AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{716762D1-8C4A-460B-AF8E-3D788CDD1AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4DCE9E-9A92-4B33-85EE-6C614203C478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4DCE9E-9A92-4B33-85EE-6C614203C478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4DCE9E-9A92-4B33-85EE-6C614203C478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4DCE9E-9A92-4B33-85EE-6C614203C478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

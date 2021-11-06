@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "XqvtCOyAQAixflqN6Le+eYAL87v8UdATZfKIj7XBJqlYXsMvi+vZ1q1DYSvZadNyCo5Jqbl2uR8u8yPNs4Zleg==",
-  "success": true,
+  "dgSpecHash": "ns1wV/d2Rd4S0CsGxvjAhH0nlklyifqyjmM6E5n0ZtcvBuN3FiqwRRNv25r4xomuyR6rL9j5mVChehaGTEA66w==",
+  "success": false,
   "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\App\\ProviderConnector.App.DemoClient\\ProviderConnector.App.DemoClient.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
