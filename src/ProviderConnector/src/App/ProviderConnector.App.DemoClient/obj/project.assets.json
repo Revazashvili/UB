@@ -37,13 +37,24 @@
           "bin/placeholder/ProviderConnector.Core.Providers.dll": {}
         }
       },
+      "ProviderConnector.Infrastructure.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Persistence.dll": {}
+        }
+      },
       "ProviderConnector.Infrastructure.Strategies/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Forbid": "1.0.4",
           "ProviderConnector.Core.Models": "1.0.0",
-          "ProviderConnector.Core.Providers": "1.0.0"
+          "ProviderConnector.Core.Providers": "1.0.0",
+          "ProviderConnector.Infrastructure.Persistence": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProviderConnector.Infrastructure.Strategies.dll": {}
@@ -84,6 +95,11 @@
       "path": "../../Core/ProviderConnector.Core.Providers/ProviderConnector.Core.Providers.csproj",
       "msbuildProject": "../../Core/ProviderConnector.Core.Providers/ProviderConnector.Core.Providers.csproj"
     },
+    "ProviderConnector.Infrastructure.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ProviderConnector.Infrastructure.Persistence/ProviderConnector.Infrastructure.Persistence.csproj",
+      "msbuildProject": "../../Infrastructure/ProviderConnector.Infrastructure.Persistence/ProviderConnector.Infrastructure.Persistence.csproj"
+    },
     "ProviderConnector.Infrastructure.Strategies/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/ProviderConnector.Infrastructure.Strategies/ProviderConnector.Infrastructure.Strategies.csproj",
@@ -92,7 +108,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
       "ProviderConnector.Infrastructure.Strategies >= 1.0.0"
     ]
   },
@@ -134,9 +149,6 @@
           "projectReferences": {
             "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Strategies\\ProviderConnector.Infrastructure.Strategies.csproj": {
               "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Strategies\\ProviderConnector.Infrastructure.Strategies.csproj"
-            },
-            "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj": {
-              "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj"
             }
           }
         }
@@ -168,16 +180,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

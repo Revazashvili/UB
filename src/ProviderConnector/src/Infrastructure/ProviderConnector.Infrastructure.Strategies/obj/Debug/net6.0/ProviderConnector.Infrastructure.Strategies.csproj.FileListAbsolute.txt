@@ -16,3 +16,5 @@ C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnecto
 C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\obj\Debug\net6.0\ProviderConnector.Infrastructure.Strategies.dll
 C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\obj\Debug\net6.0\ref\ProviderConnector.Infrastructure.Strategies.dll
 C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\obj\Debug\net6.0\ProviderConnector.Infrastructure.Strategies.pdb
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\bin\Debug\net6.0\ProviderConnector.Infrastructure.Persistence.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Strategies\bin\Debug\net6.0\ProviderConnector.Infrastructure.Persistence.pdb

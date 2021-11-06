@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Infrastructure\ProviderConnector.Infrastructure.Strategies\ProviderConnector.Infrastructure.Strategies.csproj" />
-      <ProjectReference Include="..\..\ProviderConnector.Strategies\ProviderConnector.Strategies.csproj" />
     </ItemGroup>
 
     <ItemGroup>

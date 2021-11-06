@@ -16,8 +16,10 @@ C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoC
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.AssemblyInfoInputs.cache
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.AssemblyInfo.cs
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.csproj.CoreCompileInputs.cache
-C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.csproj.CopyComplete
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.dll
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ref\ProviderConnector.App.DemoClient.dll
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.pdb
 C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\obj\Debug\net6.0\ProviderConnector.App.DemoClient.genruntimeconfig.cache
+C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\bin\Debug\net6.0\Forbid.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\bin\Debug\net6.0\ProviderConnector.Infrastructure.Persistence.dll
+C:\Projects\NetCore\UB\src\ProviderConnector\src\App\ProviderConnector.App.DemoClient\bin\Debug\net6.0\ProviderConnector.Infrastructure.Persistence.pdb

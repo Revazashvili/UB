@@ -1,20 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eqCVhc2dTPBfkmb561DJWQF/L5HLvgrlh1uEUmfDdsW9DuLz6SzxpwXy3QYP+E4p6KfvHp/kxiF+Xx7GBiqKMA==",
-  "success": false,
+  "dgSpecHash": "xRpsGBxId2RxlZg1lFoFsEHyQbKkxqcmmVoRKFHKfl74E2nViLxVv7zbLlM69BLgVjbX/qAKj9IE4RWvli9CEQ==",
+  "success": true,
   "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\App\\ProviderConnector.App.DemoClient\\ProviderConnector.App.DemoClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\levan\\.nuget\\packages\\forbid\\1.0.4\\forbid.1.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\ProviderConnector.Strategies\\ProviderConnector.Strategies.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

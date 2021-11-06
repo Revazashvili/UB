@@ -36,6 +36,16 @@
         "runtime": {
           "bin/placeholder/ProviderConnector.Core.Providers.dll": {}
         }
+      },
+      "ProviderConnector.Infrastructure.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Persistence.dll": {}
+        }
       }
     }
   },
@@ -68,13 +78,19 @@
       "type": "project",
       "path": "../../Core/ProviderConnector.Core.Providers/ProviderConnector.Core.Providers.csproj",
       "msbuildProject": "../../Core/ProviderConnector.Core.Providers/ProviderConnector.Core.Providers.csproj"
+    },
+    "ProviderConnector.Infrastructure.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../ProviderConnector.Infrastructure.Persistence/ProviderConnector.Infrastructure.Persistence.csproj",
+      "msbuildProject": "../ProviderConnector.Infrastructure.Persistence/ProviderConnector.Infrastructure.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Forbid >= 1.0.4",
       "ProviderConnector.Core.Models >= 1.0.0",
-      "ProviderConnector.Core.Providers >= 1.0.0"
+      "ProviderConnector.Core.Providers >= 1.0.0",
+      "ProviderConnector.Infrastructure.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -118,6 +134,9 @@
             },
             "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Core\\ProviderConnector.Core.Providers\\ProviderConnector.Core.Providers.csproj": {
               "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Core\\ProviderConnector.Core.Providers\\ProviderConnector.Core.Providers.csproj"
+            },
+            "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Persistence\\ProviderConnector.Infrastructure.Persistence.csproj": {
+              "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Persistence\\ProviderConnector.Infrastructure.Persistence.csproj"
             }
           }
         }

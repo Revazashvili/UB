@@ -9,6 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Core\ProviderConnector.Core.Models\ProviderConnector.Core.Models.csproj" />
       <ProjectReference Include="..\..\Core\ProviderConnector.Core.Providers\ProviderConnector.Core.Providers.csproj" />
+      <ProjectReference Include="..\ProviderConnector.Infrastructure.Persistence\ProviderConnector.Infrastructure.Persistence.csproj" />
     </ItemGroup>
 
     <ItemGroup>

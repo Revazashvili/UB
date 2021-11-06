@@ -1,4 +1,6 @@
-﻿namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
+﻿using ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Brokers;
+
+namespace ProviderConnector.Infrastructure.Strategies.GetBalanceStrategy.Strategy;
 using Forbids;
 using Core.Models.Requests;
 using Core.Models.Responses;
@@ -8,15 +10,20 @@ using Factory;
 public class GetBalanceStrategy : IGetBalanceStrategy
 {
     private readonly IProviderFactory _providerFactory;
+    private readonly IStrategyBroker _strategyBroker;
 
-    public GetBalanceStrategy(IProviderFactory providerFactory) => _providerFactory = providerFactory;
+    public GetBalanceStrategy(IProviderFactory providerFactory, IStrategyBroker strategyBroker) =>
+        (_providerFactory, _strategyBroker) = (providerFactory, strategyBroker);
 
     public async ValueTask<IEnumerable<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest getBalanceRequest)
     {
         try
         {
-            var providers = await _providerFactory.GetCommonProvidersAsync();
-            var provider = providers[getBalanceRequest.ProviderId];
+            var providerStrategies =await _strategyBroker.GetStrategies();
+            Forbid.From.NullOrEmpty(providerStrategies);
+            var providerStrategy = providerStrategies[getBalanceRequest.ProviderId];
+            Forbid.From.NullOrEmpty(providerStrategy);
+            var provider = await _providerFactory.BuildProviderAsync(providerStrategy);
             Forbid.From.Null(provider, new ProviderNotFoundException());
             return await provider.GetBalanceAsync(getBalanceRequest);
         }
