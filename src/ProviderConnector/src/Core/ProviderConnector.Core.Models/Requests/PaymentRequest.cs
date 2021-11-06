@@ -21,7 +21,7 @@ public class PaymentRequest : Request
     /// <summary>
     /// Gets or sets operation finalize time. 
     /// </summary>
-    public string FinTime { get; set; } = null!;
+    public DateTime FinalizeTime { get; set; }
     /// <summary>
     /// Gets or sets additional information about operation.
     /// </summary>

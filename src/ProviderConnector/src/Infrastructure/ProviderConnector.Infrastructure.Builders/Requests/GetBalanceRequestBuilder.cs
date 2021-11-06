@@ -11,15 +11,10 @@ namespace ProviderConnector.Infrastructure.Builders.Requests;
 public class GetBalanceRequestBuilder
 {
     /// <summary>
-    /// Instance of <see cref="Parameter"/> class.
+    /// Instance of <see cref="GetBalanceRequest"/> class.
     /// </summary>
     private GetBalanceRequest _getBalanceRequest = new();
 
-    /// <summary>
-    /// Initializes new instance of <see cref="GetBalanceRequestBuilder"/>.
-    /// </summary>
-    public GetBalanceRequestBuilder() { }
-    
     /// <summary>
     /// Adds provider id to <see cref="GetBalanceRequest"/> instance.
     /// </summary>
