@@ -21,12 +21,6 @@ public class GetBalanceRequestBuilder
     public GetBalanceRequestBuilder() { }
     
     /// <summary>
-    /// Initializes new instance of <see cref="GetBalanceRequest"/> with provided provider id.
-    /// </summary>
-    /// <param name="providerId">Provider identifier.</param>
-    public GetBalanceRequestBuilder(int providerId) => _getBalanceRequest.ProviderId = Forbid.From.Zero(providerId);
-
-    /// <summary>
     /// Adds provider id to <see cref="GetBalanceRequest"/> instance.
     /// </summary>
     /// <param name="providerId">Provider identifier.</param>
@@ -44,9 +38,10 @@ public class GetBalanceRequestBuilder
     /// <returns>Reference to <see cref="GetBalanceRequestBuilder"/> object.</returns>
     public GetBalanceRequestBuilder WithParameter(Parameter parameter)
     {
+        Forbid.From.Null(parameter, new ParameterNullException());
         Forbid.From.True(_getBalanceRequest.Parameters.Any(p => p.Key == parameter.Key),
             new ParameterAlreadyExistsException());
-        _getBalanceRequest.Parameters.Add(Forbid.From.Null(parameter,new ParameterNullException()));
+        _getBalanceRequest.Parameters.Add(parameter);
         return this;
     }
 
@@ -57,9 +52,10 @@ public class GetBalanceRequestBuilder
     /// <returns>Reference to <see cref="GetBalanceRequestBuilder"/> object.</returns>
     public GetBalanceRequestBuilder WithFirstParameter(object value)
     {
+        Forbid.From.Null(value, new ParameterNullException());
         Forbid.From.True(_getBalanceRequest.Parameters.Any(parameter => parameter.Key == "param1"),
             new ParameterAlreadyExistsException());
-        var parameter = new Parameter("param1", Forbid.From.Null(value).ToString());
+        var parameter = new Parameter("param1", value.ToString());
         _getBalanceRequest.Parameters.Add(parameter);
         return this;
     }
@@ -71,9 +67,10 @@ public class GetBalanceRequestBuilder
     /// <returns>Reference to <see cref="GetBalanceRequestBuilder"/> object.</returns>
     public GetBalanceRequestBuilder WithSecondParameter(object value)
     {
+        Forbid.From.Null(value, new ParameterNullException());
         Forbid.From.True(_getBalanceRequest.Parameters.Any(parameter => parameter.Key == "param2"),
             new ParameterAlreadyExistsException());
-        var parameter = new Parameter("param2", Forbid.From.Null(value).ToString());
+        var parameter = new Parameter("param2", value.ToString());
         _getBalanceRequest.Parameters.Add(parameter);
         return this;
     }
@@ -85,10 +82,17 @@ public class GetBalanceRequestBuilder
     /// <returns>Reference to <see cref="GetBalanceRequestBuilder"/> object.</returns>
     public GetBalanceRequestBuilder WithThirdParameter(object value)
     {
+        Forbid.From.Null(value, new ParameterNullException());
         Forbid.From.True(_getBalanceRequest.Parameters.Any(parameter => parameter.Key == "param3"),
             new ParameterAlreadyExistsException());
-        var parameter = new Parameter("param3", Forbid.From.Null(value).ToString());
+        var parameter = new Parameter("param3", value.ToString());
         _getBalanceRequest.Parameters.Add(parameter);
         return this;
     }
+
+    /// <summary>
+    /// Returns built <see cref="GetBalanceRequest"/>.
+    /// </summary>
+    /// <returns><see cref="GetBalanceRequest"/> instance.</returns>
+    public GetBalanceRequest Build() => _getBalanceRequest;
 }
