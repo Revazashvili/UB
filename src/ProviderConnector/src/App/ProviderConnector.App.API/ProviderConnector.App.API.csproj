@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5"/>
+        <PackageReference Include="Ardalis.ApiEndpoints" Version="4.0.0-pre1" />
+        <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\ProviderConnector.Core.Events\ProviderConnector.Core.Events.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ProviderConnector.Infrastructure.Factories\ProviderConnector.Infrastructure.Factories.csproj" />
     </ItemGroup>
 
 </Project>
