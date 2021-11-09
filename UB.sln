@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Core.Events", "src\ProviderConnector\src\Core\ProviderConnector.Core.Events\ProviderConnector.Core.Events.csproj", "{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.App.API", "src\ProviderConnector\src\App\ProviderConnector.App.API\ProviderConnector.App.API.csproj", "{68B1E968-66D1-46B9-A570-7CF9CD80017B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,7 @@ Global
 		{00F01CF7-A191-40DB-8EE8-FF9A796F624E} = {F8D8B32F-9E2F-46BB-B34B-D5DFC971C097}
 		{06C84359-9473-4A3D-92D5-853A2584024C} = {B9DAE29B-D22B-4F00-95C2-22329778EA42}
 		{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51} = {47DCE681-63C6-481D-BAFA-6D4BC8239585}
+		{68B1E968-66D1-46B9-A570-7CF9CD80017B} = {315562C2-03D1-4388-A0E6-2028351CAE93}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{25A24DF0-F39E-46AA-9A12-DDC970D9977B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -70,5 +73,9 @@ Global
 		{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B1E968-66D1-46B9-A570-7CF9CD80017B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B1E968-66D1-46B9-A570-7CF9CD80017B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B1E968-66D1-46B9-A570-7CF9CD80017B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B1E968-66D1-46B9-A570-7CF9CD80017B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
