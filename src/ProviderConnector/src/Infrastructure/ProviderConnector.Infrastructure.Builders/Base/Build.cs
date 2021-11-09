@@ -1,9 +1,8 @@
-﻿using ProviderConnector.Infrastructure.Builders.Requests;
-
-namespace ProviderConnector.Infrastructure.Builders.Base;
+﻿namespace ProviderConnector.Infrastructure.Builders.Base;
+using Responses;
 
 public class Build : IBuilder
 {
-    public static GetBalanceRequestBuilder BalanceRequest { get; } = new();
-    public static PaymentRequestBuilder PaymentRequest { get; } = new();
+    public static GetBalanceResponseBuilder Balance { get; } = new();
+    public static PaymentResponseBuilder Payment { get; } = new();
 }
