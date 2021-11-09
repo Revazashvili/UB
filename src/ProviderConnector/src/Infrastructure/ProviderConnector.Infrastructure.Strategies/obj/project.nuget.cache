@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5jIyW/V7WzXhWwajvuPCqVOZPjF3vSWmEkKujucszWSVzFLXF1ZjYfa8OwusVAcRT5DWMKgQO/tz9pK1rhxD9w==",
+  "dgSpecHash": "1mplOQj2Dqia8y36antZtR0dxn3s0KBE+9v1j91kYuX3NRMHgcAGOBvJGRZAF0bdhX/xqiy0QA1FltqwkKpIXQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Strategies\\ProviderConnector.Infrastructure.Strategies.csproj",
   "expectedPackageFiles": [

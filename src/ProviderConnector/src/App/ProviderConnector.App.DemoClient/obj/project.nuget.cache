@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9mO9nj1vQuKkNjl9gtSGJ/TkOZIWCffpFiCC5yg8Px1opxwiFfXBB5P07yXZ4uuEZx6WL3N23JR4nLjU/hd3XQ==",
+  "dgSpecHash": "xRpsGBxId2RxlZg1lFoFsEHyQbKkxqcmmVoRKFHKfl74E2nViLxVv7zbLlM69BLgVjbX/qAKj9IE4RWvli9CEQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\App\\ProviderConnector.App.DemoClient\\ProviderConnector.App.DemoClient.csproj",
   "expectedPackageFiles": [
