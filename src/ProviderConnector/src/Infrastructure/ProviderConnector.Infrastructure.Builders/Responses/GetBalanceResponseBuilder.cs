@@ -1,12 +1,13 @@
-﻿using ProviderConnector.Core.Models.Enums;
-using ProviderConnector.Infrastructure.Builders.Requests;
-
-namespace ProviderConnector.Infrastructure.Builders.Responses;
+﻿namespace ProviderConnector.Infrastructure.Builders.Responses;
+using Core.Models.Enums;
 using Forbids;
 using Core.Models.Common;
 using ProviderConnector.Core.Models.Responses;
 using Exceptions;
 
+/// <summary>
+/// Builder class for <see cref="GetBalanceResponse"/>.
+/// </summary>
 public class GetBalanceResponseBuilder
 {
     /// <summary>
