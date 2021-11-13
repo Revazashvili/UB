@@ -28,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.App.API",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.Builders", "src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Builders\ProviderConnector.Infrastructure.Builders.csproj", "{34AD3C7A-111F-4BB5-AE55-645B8ED33809}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sdk", "sdk", "{A216A4DF-027D-4FB5-BAE0-8B5FD59C79E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Client.SDK", "src\ProviderConnector\sdk\ProviderConnector.Client.SDK\ProviderConnector.Client.SDK.csproj", "{BDCF697D-61A9-4A1D-81CD-1CA735DDD803}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,8 @@ Global
 		{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51} = {47DCE681-63C6-481D-BAFA-6D4BC8239585}
 		{68B1E968-66D1-46B9-A570-7CF9CD80017B} = {315562C2-03D1-4388-A0E6-2028351CAE93}
 		{34AD3C7A-111F-4BB5-AE55-645B8ED33809} = {B9DAE29B-D22B-4F00-95C2-22329778EA42}
+		{A216A4DF-027D-4FB5-BAE0-8B5FD59C79E3} = {FB11319A-B3B4-40B5-909B-46D27FAF9406}
+		{BDCF697D-61A9-4A1D-81CD-1CA735DDD803} = {A216A4DF-027D-4FB5-BAE0-8B5FD59C79E3}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{25A24DF0-F39E-46AA-9A12-DDC970D9977B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -77,5 +83,9 @@ Global
 		{34AD3C7A-111F-4BB5-AE55-645B8ED33809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34AD3C7A-111F-4BB5-AE55-645B8ED33809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34AD3C7A-111F-4BB5-AE55-645B8ED33809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCF697D-61A9-4A1D-81CD-1CA735DDD803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCF697D-61A9-4A1D-81CD-1CA735DDD803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCF697D-61A9-4A1D-81CD-1CA735DDD803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCF697D-61A9-4A1D-81CD-1CA735DDD803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
