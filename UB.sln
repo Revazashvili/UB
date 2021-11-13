@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F8D8B32F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.Builders.Tests", "src\ProviderConnector\tests\ProviderConnector.Infrastructure.Builders.Tests\ProviderConnector.Infrastructure.Builders.Tests.csproj", "{00F01CF7-A191-40DB-8EE8-FF9A796F624E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.Factories", "src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.Factories\ProviderConnector.Infrastructure.Factories.csproj", "{06C84359-9473-4A3D-92D5-853A2584024C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Infrastructure.SharedKernel", "src\ProviderConnector\src\Infrastructure\ProviderConnector.Infrastructure.SharedKernel\ProviderConnector.Infrastructure.SharedKernel.csproj", "{06C84359-9473-4A3D-92D5-853A2584024C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderConnector.Core.Events", "src\ProviderConnector\src\Core\ProviderConnector.Core.Events\ProviderConnector.Core.Events.csproj", "{01E6D9FB-C2C1-40E2-9AE3-01ADA2B6BE51}"
 EndProject

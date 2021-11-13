@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Infrastructure\ProviderConnector.Infrastructure.Factories\ProviderConnector.Infrastructure.Factories.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ProviderConnector.Infrastructure.SharedKernel\ProviderConnector.Infrastructure.SharedKernel.csproj" />
       <ProjectReference Include="..\ProviderConnector.Core.Models\ProviderConnector.Core.Models.csproj" />
     </ItemGroup>
 
