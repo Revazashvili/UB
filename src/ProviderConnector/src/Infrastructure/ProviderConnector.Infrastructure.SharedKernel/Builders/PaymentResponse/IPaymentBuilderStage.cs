@@ -2,7 +2,7 @@
 
 namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
 
-public interface IPaymentBuilder
+public interface IPaymentBuilderStage
 {
     /// <summary>
     /// Returns built <see cref="PaymentResponse"/>.

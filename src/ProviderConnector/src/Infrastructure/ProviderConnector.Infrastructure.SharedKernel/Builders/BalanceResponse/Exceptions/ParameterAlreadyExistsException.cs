@@ -1,4 +1,4 @@
-﻿namespace ProviderConnector.Infrastructure.SharedKernel.Builders.ResponseBuilder.Exceptions;
+﻿namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse.Exceptions;
 
 public class ParameterAlreadyExistsException : Exception
 {

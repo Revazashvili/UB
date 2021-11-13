@@ -3,12 +3,12 @@ using ProviderConnector.Core.Models.Enums;
 
 namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
 
-public class PaymentResponseBuilder : ITransactionIdStage,IStatusStage,IPaymentBuilder
+public class PaymentResponseBuilderStage : ITransactionIdStage,IStatusStage,IPaymentBuilderStage
 {
     private Core.Models.Responses.PaymentResponse _paymentResponse;
-    private PaymentResponseBuilder() => _paymentResponse = new();
+    private PaymentResponseBuilderStage() => _paymentResponse = new();
 
-    public static ITransactionIdStage Create() => new PaymentResponseBuilder();
+    public static ITransactionIdStage Create() => new PaymentResponseBuilderStage();
 
     public IStatusStage WithTransactionId(long transactionId)
     {
@@ -16,13 +16,13 @@ public class PaymentResponseBuilder : ITransactionIdStage,IStatusStage,IPaymentB
         return this;
     }
     
-    public IPaymentBuilder WithStatus(PaymentStatus status)
+    public IPaymentBuilderStage WithStatus(PaymentStatus status)
     {
         _paymentResponse.Status = status;
         return this;
     }
     
-    public PaymentResponseBuilder Failed()
+    public PaymentResponseBuilderStage Failed()
     {
         _paymentResponse.Status = PaymentStatus.UndefinedError;
         _paymentResponse.TransactionId = 0;

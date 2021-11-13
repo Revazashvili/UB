@@ -9,10 +9,10 @@ public interface IStatusStage
     /// Add status to <see cref="PaymentResponse"/> instance.
     /// </summary>
     /// <param name="status"><see cref="PaymentStatus"/></param>
-    IPaymentBuilder WithStatus(PaymentStatus status);
+    IPaymentBuilderStage WithStatus(PaymentStatus status);
     /// <summary>
     /// add Error status to <see cref="PaymentResponse"/> instance
     /// and set transaction identifier to zero.
     /// </summary>
-    PaymentResponseBuilder Failed();
+    PaymentResponseBuilderStage Failed();
 }
