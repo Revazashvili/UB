@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-using ProviderConnector.Core.Models.Contracts;
+﻿using ProviderConnector.Core.Models.Common;
 
-namespace ProviderConnector.Core.Models.Requests
+namespace ProviderConnector.Core.Models.Requests;
+
+/// <summary>
+///     Balance request model.
+/// </summary>
+public class GetBalanceRequest : Base
 {
-    public class GetBalanceRequest
-    {
-        public GetBalanceRequest() => Parameters = new List<Parameter>();
-
-        public int ProviderId { get; set; }
-        public List<Parameter> Parameters { get; set; }
-    }
 }
