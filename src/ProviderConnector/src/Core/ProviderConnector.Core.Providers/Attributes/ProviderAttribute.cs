@@ -1,4 +1,6 @@
-﻿namespace ProviderConnector.Core.Providers.Attributes;
+﻿using System;
+
+namespace ProviderConnector.Core.Providers.Attributes;
 
 /// <summary>
 ///     Attribute for provider metadata.

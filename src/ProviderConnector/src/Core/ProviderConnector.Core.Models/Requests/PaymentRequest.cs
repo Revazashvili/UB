@@ -1,4 +1,5 @@
-﻿using ProviderConnector.Core.Models.Common;
+﻿using System;
+using ProviderConnector.Core.Models.Common;
 
 namespace ProviderConnector.Core.Models.Requests;
 

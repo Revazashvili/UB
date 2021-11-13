@@ -1,4 +1,6 @@
-﻿using ProviderConnector.Core.Models.Common;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using ProviderConnector.Core.Models.Common;
 using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Requests;
 using ProviderConnector.Core.Models.Responses;

@@ -1,4 +1,5 @@
-﻿using ProviderConnector.Core.Models.Common;
+﻿using System.Collections.Generic;
+using ProviderConnector.Core.Models.Common;
 
 namespace ProviderConnector.Core.Models.Responses;
 
