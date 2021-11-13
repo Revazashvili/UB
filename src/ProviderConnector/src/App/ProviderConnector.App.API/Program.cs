@@ -1,4 +1,4 @@
-using ProviderConnector.Infrastructure.Factories;
+using ProviderConnector.Infrastructure.SharedKernel;
 
 var builder = WebApplication.CreateBuilder(args);
 

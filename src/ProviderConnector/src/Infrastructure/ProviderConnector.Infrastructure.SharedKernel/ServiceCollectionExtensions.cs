@@ -1,10 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ProviderConnector.Infrastructure.Factories.Brokers.Implementations;
-using ProviderConnector.Infrastructure.Factories.Brokers.Interfaces;
-using ProviderConnector.Infrastructure.Factories.Factories.Implementations;
-using ProviderConnector.Infrastructure.Factories.Factories.Interfaces;
+using ProviderConnector.Infrastructure.SharedKernel.Brokers;
+using ProviderConnector.Infrastructure.SharedKernel.Factories;
 
-namespace ProviderConnector.Infrastructure.Factories;
+namespace ProviderConnector.Infrastructure.SharedKernel;
 
 /// <summary>
 /// Extension class for <see cref="IServiceCollection"/> interface.

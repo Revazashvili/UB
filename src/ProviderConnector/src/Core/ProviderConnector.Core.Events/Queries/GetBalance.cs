@@ -1,8 +1,9 @@
-﻿namespace ProviderConnector.Core.Events.Queries;
+﻿using ProviderConnector.Infrastructure.SharedKernel.Factories;
+
+namespace ProviderConnector.Core.Events.Queries;
 using MediatR;
 using Models.Requests;
 using Models.Responses;
-using Infrastructure.Factories.Factories.Interfaces;
 
 public record GetBalanceQuery(GetBalanceRequest BalanceRequest) : IRequest<IEnumerable<GetBalanceResponse>>;
 
