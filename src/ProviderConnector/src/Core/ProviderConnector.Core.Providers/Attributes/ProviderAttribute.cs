@@ -1,19 +1,22 @@
 ﻿namespace ProviderConnector.Core.Providers.Attributes;
 
 /// <summary>
-/// Attribute for provider metadata.
+///     Attribute for provider metadata.
 /// </summary>
 [AttributeUsage(AttributeTargets.Class)]
 public class ProviderAttribute : Attribute
 {
     /// <summary>
-    /// Initializes new instance of <see cref="ProviderAttribute"/>.
+    ///     Initializes new instance of <see cref="ProviderAttribute" />.
     /// </summary>
     /// <param name="providerId">The provider identifier.</param>
-    public ProviderAttribute(int providerId) => ProviderId = providerId;
+    public ProviderAttribute(int providerId)
+    {
+        ProviderId = providerId;
+    }
 
     /// <summary>
-    /// Gets or sets provider identifier.
+    ///     Gets or sets provider identifier.
     /// </summary>
     public int ProviderId { get; set; }
 }

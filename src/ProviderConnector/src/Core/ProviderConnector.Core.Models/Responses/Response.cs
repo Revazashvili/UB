@@ -1,10 +1,10 @@
-﻿using ProviderConnector.Core.Models.Enums;
+﻿using ProviderConnector.Core.Models.Common;
+using ProviderConnector.Core.Models.Enums;
 
 namespace ProviderConnector.Core.Models.Responses;
-using Common;
 
 /// <summary>
-/// Base response model
+///     Base response model
 /// </summary>
 public class Response : Base
 {

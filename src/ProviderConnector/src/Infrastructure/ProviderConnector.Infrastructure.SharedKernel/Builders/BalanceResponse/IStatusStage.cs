@@ -6,8 +6,8 @@ namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse
 public interface IStatusStage
 {
     /// <summary>
-    /// Adds status to <see cref="GetBalanceResponse"/> instance.
+    ///     Adds status to <see cref="GetBalanceResponse" /> instance.
     /// </summary>
-    /// <param name="status"><see cref="Status"/>.</param>
+    /// <param name="status"><see cref="Status" />.</param>
     IAdditionalParameterStage WithStatus(Status status);
 }

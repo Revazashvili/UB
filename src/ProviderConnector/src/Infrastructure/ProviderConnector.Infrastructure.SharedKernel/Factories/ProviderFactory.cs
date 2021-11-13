@@ -7,18 +7,17 @@ using ProviderConnector.Infrastructure.SharedKernel.Brokers;
 namespace ProviderConnector.Infrastructure.SharedKernel.Factories;
 
 /// <summary>
-/// Factory for creating <see cref="IProvider"/> objects.
+///     Factory for creating <see cref="IProvider" /> objects.
 /// </summary>
 public interface IProviderFactory
 {
     /// <summary>
-    /// Creates <see cref="IProvider"/> instance based on the provider identifier.
+    ///     Creates <see cref="IProvider" /> instance based on the provider identifier.
     /// </summary>
     /// <param name="providerId">The provider identifier.</param>
-    /// <returns><see cref="IProvider"/> instance.</returns>
+    /// <returns><see cref="IProvider" /> instance.</returns>
     IProvider CreateProvider(int providerId);
 }
-
 
 public class ProviderFactory : IProviderFactory
 {

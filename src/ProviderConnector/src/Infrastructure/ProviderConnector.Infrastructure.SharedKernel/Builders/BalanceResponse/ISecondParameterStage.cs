@@ -6,13 +6,13 @@ namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse
 public interface ISecondParameterStage
 {
     /// <summary>
-    /// Adds parameter to <see cref="GetBalanceResponse"/> instance.
+    ///     Adds parameter to <see cref="GetBalanceResponse" /> instance.
     /// </summary>
-    /// <param name="value"><see cref="Parameter"/> value.</param>
+    /// <param name="value"><see cref="Parameter" /> value.</param>
     IThirdParameterStage WithSecondParameter(object value);
 
     /// <summary>
-    /// Specifies that <see cref="GetBalanceResponse"/> doesn't have second parameter.
+    ///     Specifies that <see cref="GetBalanceResponse" /> doesn't have second parameter.
     /// </summary>
     IAbonentInfoStage WithoutSecondParameter();
 }

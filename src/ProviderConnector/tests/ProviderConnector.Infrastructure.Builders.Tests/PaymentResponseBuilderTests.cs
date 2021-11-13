@@ -1,5 +1,4 @@
 ﻿using ProviderConnector.Core.Models.Enums;
-using ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse;
 using ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
 using Xunit;
 

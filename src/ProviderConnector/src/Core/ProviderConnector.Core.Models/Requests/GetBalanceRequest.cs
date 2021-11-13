@@ -1,8 +1,9 @@
-﻿namespace ProviderConnector.Core.Models.Requests;
-using Common;
+﻿using ProviderConnector.Core.Models.Common;
+
+namespace ProviderConnector.Core.Models.Requests;
 
 /// <summary>
-/// Balance request model.
+///     Balance request model.
 /// </summary>
 public class GetBalanceRequest : Base
 {

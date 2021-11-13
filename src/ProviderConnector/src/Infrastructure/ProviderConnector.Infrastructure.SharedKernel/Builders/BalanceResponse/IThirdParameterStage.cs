@@ -6,8 +6,8 @@ namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse
 public interface IThirdParameterStage
 {
     /// <summary>
-    /// Adds parameter to <see cref="GetBalanceResponse"/> instance.
+    ///     Adds parameter to <see cref="GetBalanceResponse" /> instance.
     /// </summary>
-    /// <param name="value"><see cref="Parameter"/> value.</param>
+    /// <param name="value"><see cref="Parameter" /> value.</param>
     IParameterStage WithThirdParameter(object value);
 }

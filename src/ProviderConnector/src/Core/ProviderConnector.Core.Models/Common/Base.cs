@@ -3,21 +3,21 @@
 namespace ProviderConnector.Core.Models.Common;
 
 /// <summary>
-/// Base model for request and response.
+///     Base model for request and response.
 /// </summary>
 public class Base
 {
     /// <summary>
-    /// Gets or sets provider identifier.
+    ///     Gets or sets provider identifier.
     /// </summary>
     public int ProviderId { get; set; }
-    
+
     /// <summary>
-    /// Get or sets <see cref="Parameter"/> list.
+    ///     Get or sets <see cref="Parameter" /> list.
     /// </summary>
     public List<Parameter> Parameters { get; set; }
-    
-    
+
+
     public string? this[string key]
     {
         get
@@ -37,5 +37,8 @@ public class Base
         }
     }
 
-    public bool HasParameterWithKey(string key) => Parameters.Any(i => i.Key == key);
+    public bool HasParameterWithKey(string key)
+    {
+        return Parameters.Any(i => i.Key == key);
+    }
 }

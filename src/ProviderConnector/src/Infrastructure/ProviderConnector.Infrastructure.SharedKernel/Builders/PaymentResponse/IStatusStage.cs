@@ -6,13 +6,16 @@ namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse
 public interface IStatusStage
 {
     /// <summary>
-    /// Add status to <see cref="PaymentResponse"/> instance.
+    ///     Add status to <see cref="PaymentResponse" /> instance.
     /// </summary>
-    /// <param name="status"><see cref="PaymentStatus"/></param>
+    /// <param name="status">
+    ///     <see cref="PaymentStatus" />
+    /// </param>
     IPaymentBuilderStage WithStatus(PaymentStatus status);
+
     /// <summary>
-    /// add Error status to <see cref="PaymentResponse"/> instance
-    /// and set transaction identifier to zero.
+    ///     add Error status to <see cref="PaymentResponse" /> instance
+    ///     and set transaction identifier to zero.
     /// </summary>
     PaymentResponseBuilderStage Failed();
 }
