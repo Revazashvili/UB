@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ProviderConnector.Core.Providers.Exceptions;
+﻿namespace ProviderConnector.Core.Providers.Exceptions;
 
 /// <summary>
 ///     Exception to throw when broker can't create instance of specified provider.

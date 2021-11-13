@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using ProviderConnector.Core.Models.Requests;
 using ProviderConnector.Core.Models.Responses;
 using ProviderConnector.Infrastructure.SharedKernel.Factories;

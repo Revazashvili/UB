@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Forbids;
+﻿using Forbids;
 
 namespace ProviderConnector.Core.Models.Common;
 
