@@ -1,5 +1,5 @@
 ﻿using ProviderConnector.Core.Models.Enums;
-using ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
+using ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 using Xunit;
 
 namespace ProviderConnector.Infrastructure.Builders.Tests;

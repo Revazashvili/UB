@@ -1,7 +1,7 @@
 ﻿using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Responses;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
+namespace ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 
 public interface IStatusStage
 {

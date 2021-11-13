@@ -1,6 +1,6 @@
 ﻿using ProviderConnector.Core.Models.Responses;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse;
+namespace ProviderConnector.Infrastructure.Builders.BalanceResponseBuilder;
 
 public interface IProviderIdStage
 {

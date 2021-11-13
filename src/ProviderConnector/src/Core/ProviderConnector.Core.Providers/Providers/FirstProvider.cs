@@ -29,4 +29,9 @@ public class FirstProvider : IProvider
             }
         });
     }
+
+    public ValueTask<PaymentResponse> PayAsync(PaymentRequest paymentRequest)
+    {
+        return new ValueTask<PaymentResponse>(new PaymentResponse());
+    }
 }

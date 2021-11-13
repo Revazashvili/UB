@@ -2,9 +2,9 @@
 using ProviderConnector.Core.Models.Common;
 using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Responses;
-using ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse.Exceptions;
+using ProviderConnector.Infrastructure.Builders.BalanceResponseBuilder.Exceptions;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.BalanceResponse;
+namespace ProviderConnector.Infrastructure.Builders.BalanceResponseBuilder;
 
 public class BalanceResponseBuilder : IProviderIdStage,
     IFirstParameterStage,

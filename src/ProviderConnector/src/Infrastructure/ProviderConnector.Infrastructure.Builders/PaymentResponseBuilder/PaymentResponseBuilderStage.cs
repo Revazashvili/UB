@@ -1,7 +1,7 @@
 ﻿using Forbids;
 using ProviderConnector.Core.Models.Enums;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
+namespace ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 
 public class PaymentResponseBuilderStage : ITransactionIdStage, IStatusStage, IPaymentBuilderStage
 {
