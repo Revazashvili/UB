@@ -1,7 +1,8 @@
-﻿namespace ProviderConnector.Infrastructure.Builders.Responses;
-using Forbids;
-using Core.Models.Enums;
+﻿using Forbids;
+using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Responses;
+
+namespace ProviderConnector.Infrastructure.SharedKernel.Builders.ResponseBuilder.Responses;
 
 /// <summary>
 /// Builder class for <see cref="PaymentResponse"/>.

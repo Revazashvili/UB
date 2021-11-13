@@ -1,9 +1,10 @@
-﻿namespace ProviderConnector.Infrastructure.Builders.Responses;
-using Core.Models.Enums;
-using Forbids;
-using Core.Models.Common;
+﻿using Forbids;
+using ProviderConnector.Core.Models.Common;
+using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Responses;
-using Exceptions;
+using ProviderConnector.Infrastructure.SharedKernel.Builders.ResponseBuilder.Exceptions;
+
+namespace ProviderConnector.Infrastructure.SharedKernel.Builders.ResponseBuilder.Responses;
 
 /// <summary>
 /// Builder class for <see cref="GetBalanceResponse"/>.
@@ -34,9 +35,9 @@ public class GetBalanceResponseBuilder
     /// <returns>Reference to <see cref="GetBalanceResponseBuilder"/> object.</returns>
     public GetBalanceResponseBuilder WithParameter(Parameter parameter)
     {
-        Forbid.From.Null(parameter, new ParameterNullException());
+        Forbid.From.Null(parameter, ParameterNullException.Instance);
         Forbid.From.True(_getBalanceResponse.Parameters.Any(p => p.Key == parameter.Key),
-            new ParameterAlreadyExistsException());
+            ParameterAlreadyExistsException.Instance);
         _getBalanceResponse.Parameters.Add(parameter);
         return this;
     }
@@ -48,9 +49,9 @@ public class GetBalanceResponseBuilder
     /// <returns>Reference to <see cref="GetBalanceResponseBuilder"/> object.</returns>
     public GetBalanceResponseBuilder WithFirstParameter(object value)
     {
-        Forbid.From.Null(value, new ParameterNullException());
+        Forbid.From.Null(value, ParameterNullException.Instance);
         Forbid.From.True(_getBalanceResponse.Parameters.Any(parameter => parameter.Key == "param1"),
-            new ParameterAlreadyExistsException());
+            ParameterAlreadyExistsException.Instance);
         var parameter = new Parameter("param1", value.ToString());
         _getBalanceResponse.Parameters.Add(parameter);
         return this;
@@ -63,9 +64,9 @@ public class GetBalanceResponseBuilder
     /// <returns>Reference to <see cref="GetBalanceResponseBuilder"/> object.</returns>
     public GetBalanceResponseBuilder WithSecondParameter(object value)
     {
-        Forbid.From.Null(value, new ParameterNullException());
+        Forbid.From.Null(value, ParameterNullException.Instance);
         Forbid.From.True(_getBalanceResponse.Parameters.Any(parameter => parameter.Key == "param2"),
-            new ParameterAlreadyExistsException());
+            ParameterAlreadyExistsException.Instance);
         var parameter = new Parameter("param2", value.ToString());
         _getBalanceResponse.Parameters.Add(parameter);
         return this;
@@ -78,9 +79,9 @@ public class GetBalanceResponseBuilder
     /// <returns>Reference to <see cref="GetBalanceResponseBuilder"/> object.</returns>
     public GetBalanceResponseBuilder WithThirdParameter(object value)
     {
-        Forbid.From.Null(value, new ParameterNullException());
+        Forbid.From.Null(value, ParameterNullException.Instance);
         Forbid.From.True(_getBalanceResponse.Parameters.Any(parameter => parameter.Key == "param3"),
-            new ParameterAlreadyExistsException());
+            ParameterAlreadyExistsException.Instance);
         var parameter = new Parameter("param3", value.ToString());
         _getBalanceResponse.Parameters.Add(parameter);
         return this;
@@ -152,9 +153,9 @@ public class GetBalanceResponseBuilder
     /// <returns>Reference to <see cref="GetBalanceResponseBuilder"/> object.</returns>    
     public GetBalanceResponseBuilder WithAdditionalParameter(Parameter parameter)
     {
-        Forbid.From.Null(parameter, new ParameterNullException());
+        Forbid.From.Null(parameter, ParameterNullException.Instance);
         Forbid.From.True(_getBalanceResponse.AdditionalParameters.Any(p => p.Key == parameter.Key),
-            new ParameterAlreadyExistsException());
+            ParameterAlreadyExistsException.Instance);
         _getBalanceResponse.AdditionalParameters.Add(parameter);
         return this;
     }
