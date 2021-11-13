@@ -1,9 +1,10 @@
-﻿using ProviderConnector.Core.Models.Common;
-using ProviderConnector.Core.Models.Enums;
+﻿using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Requests;
 using ProviderConnector.Core.Models.Responses;
 using ProviderConnector.Core.Providers.Attributes;
 using ProviderConnector.Core.Providers.Interfaces;
+using ProviderConnector.Infrastructure.Builders.BalanceResponseBuilder;
+using ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 
 namespace ProviderConnector.Core.Providers.Providers;
 
@@ -12,26 +13,27 @@ public class FirstProvider : IProvider
 {
     public ValueTask<IEnumerable<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest getBalanceRequest)
     {
-        return new ValueTask<IEnumerable<GetBalanceResponse>>(new[]
-        {
-            new GetBalanceResponse
-            {
-                ProviderId = 1,
-                Amount = 1,
-                AbonentInfo = "asdasd",
-                Status = Status.Success,
-                MaxPayAmount = 1,
-                MinPayAmount = 1,
-                Parameters = new List<Parameter>
-                {
-                    new("param1", "123213123")
-                }
-            }
-        });
+        var getBalanceResponse = BalanceResponseBuilder
+            .Create()
+            .WithProviderId(1)
+            .WithFirstParameter("12345")
+            .WithoutSecondParameter()
+            .WithAbonentInfo("abonent info")
+            .WithAmount(10)
+            .WithoutMinPayAmount()
+            .WithoutMaxPayAmount()
+            .WithStatus(Status.Success)
+            .WithoutAdditionalParameters()
+            .Build();
+        return new ValueTask<IEnumerable<GetBalanceResponse>>(new[] { getBalanceResponse });
     }
 
     public ValueTask<PaymentResponse> PayAsync(PaymentRequest paymentRequest)
     {
-        return new ValueTask<PaymentResponse>(new PaymentResponse());
+        var paymentResponse = PaymentResponseBuilder
+            .Create().WithTransactionId(123456789)
+            .WithStatus(PaymentStatus.SuccessOrDuplicateTransaction)
+            .Build();
+        return new ValueTask<PaymentResponse>(paymentResponse);
     }
 }

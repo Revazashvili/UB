@@ -17,5 +17,5 @@ public interface IStatusStage
     ///     add Error status to <see cref="PaymentResponse" /> instance
     ///     and set transaction identifier to zero.
     /// </summary>
-    PaymentResponseBuilderStage Failed();
+    PaymentResponseBuilder Failed();
 }

@@ -9,7 +9,7 @@ public class PaymentResponseBuilderTests
     [Fact]
     public void Some()
     {
-        PaymentResponseBuilderStage
+        PaymentResponseBuilder.PaymentResponseBuilder
             .Create()
             .WithTransactionId(1)
             .WithStatus(PaymentStatus.SuccessOrDuplicateTransaction)

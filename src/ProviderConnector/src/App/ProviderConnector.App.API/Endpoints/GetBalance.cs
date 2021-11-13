@@ -9,8 +9,9 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace ProviderConnector.App.API.Endpoints;
 
 [Route("api/balance")]
-public class GetBalance : EndpointBaseAsync.WithRequest<GetBalanceRequest>.WithActionResult<
-    IEnumerable<GetBalanceResponse>>
+public class GetBalance : EndpointBaseAsync
+    .WithRequest<GetBalanceRequest>
+    .WithActionResult<IEnumerable<GetBalanceResponse>>
 {
     private readonly IMediator _mediator;
 
@@ -22,8 +23,6 @@ public class GetBalance : EndpointBaseAsync.WithRequest<GetBalanceRequest>.WithA
     [HttpGet]
     [SwaggerOperation(Summary = "Return Provider balance.", OperationId = "Balance", Tags = new[] { "Balance" })]
     public override async Task<ActionResult<IEnumerable<GetBalanceResponse>>> HandleAsync(GetBalanceRequest request,
-        CancellationToken cancellationToken = new())
-    {
-        return Ok(await _mediator.Send(new GetBalanceQuery(request), cancellationToken));
-    }
+        CancellationToken cancellationToken = new()) =>
+        Ok(await _mediator.Send(new GetBalanceQuery(request), cancellationToken));
 }
