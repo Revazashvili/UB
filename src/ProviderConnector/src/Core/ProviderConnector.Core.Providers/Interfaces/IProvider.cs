@@ -12,6 +12,11 @@ public interface IProvider
     ///     Returns list of balance responses.
     /// </summary>
     /// <param name="getBalanceRequest"><see cref="GetBalanceRequest" />.</param>
-    /// <returns></returns>
     ValueTask<IEnumerable<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest getBalanceRequest);
+
+    /// <summary>
+    ///     Gives payment information to provider.
+    /// </summary>
+    /// <param name="paymentRequest"><see cref="PaymentRequest"/></param>
+    ValueTask<PaymentResponse> PayAsync(PaymentRequest paymentRequest);
 }

@@ -1,13 +1,13 @@
 ﻿using Forbids;
 using ProviderConnector.Core.Models.Enums;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
+namespace ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 
-public class PaymentResponseBuilderStage : ITransactionIdStage, IStatusStage, IPaymentBuilderStage
+public class PaymentResponseBuilder : ITransactionIdStage, IStatusStage, IPaymentBuilderStage
 {
     private readonly Core.Models.Responses.PaymentResponse _paymentResponse;
 
-    private PaymentResponseBuilderStage()
+    private PaymentResponseBuilder()
     {
         _paymentResponse = new Core.Models.Responses.PaymentResponse();
     }
@@ -23,7 +23,7 @@ public class PaymentResponseBuilderStage : ITransactionIdStage, IStatusStage, IP
         return this;
     }
 
-    public PaymentResponseBuilderStage Failed()
+    public PaymentResponseBuilder Failed()
     {
         _paymentResponse.Status = PaymentStatus.UndefinedError;
         _paymentResponse.TransactionId = 0;
@@ -38,6 +38,6 @@ public class PaymentResponseBuilderStage : ITransactionIdStage, IStatusStage, IP
 
     public static ITransactionIdStage Create()
     {
-        return new PaymentResponseBuilderStage();
+        return new PaymentResponseBuilder();
     }
 }

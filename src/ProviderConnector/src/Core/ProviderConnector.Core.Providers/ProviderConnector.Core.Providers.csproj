@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\ProviderConnector.Core.Models\ProviderConnector.Core.Models.csproj"/>
+        <ProjectReference Include="..\..\Infrastructure\ProviderConnector.Infrastructure.Builders\ProviderConnector.Infrastructure.Builders.csproj" />
+        <ProjectReference Include="..\ProviderConnector.Core.Models\ProviderConnector.Core.Models.csproj" />
     </ItemGroup>
 
 </Project>

@@ -20,7 +20,6 @@ public class GetBalanceQueryHandler : IRequestHandler<GetBalanceQuery, IEnumerab
         CancellationToken cancellationToken)
     {
         var provider = _providerFactory.CreateProvider(request.BalanceRequest.ProviderId);
-        var getBalanceResponses = await provider.GetBalanceAsync(request.BalanceRequest);
-        return getBalanceResponses;
+        return await provider.GetBalanceAsync(request.BalanceRequest);
     }
 }

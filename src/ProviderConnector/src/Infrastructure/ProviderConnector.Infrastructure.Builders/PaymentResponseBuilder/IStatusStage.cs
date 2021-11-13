@@ -1,7 +1,7 @@
 ﻿using ProviderConnector.Core.Models.Enums;
 using ProviderConnector.Core.Models.Responses;
 
-namespace ProviderConnector.Infrastructure.SharedKernel.Builders.PaymentResponse;
+namespace ProviderConnector.Infrastructure.Builders.PaymentResponseBuilder;
 
 public interface IStatusStage
 {
@@ -17,5 +17,5 @@ public interface IStatusStage
     ///     add Error status to <see cref="PaymentResponse" /> instance
     ///     and set transaction identifier to zero.
     /// </summary>
-    PaymentResponseBuilderStage Failed();
+    PaymentResponseBuilder Failed();
 }

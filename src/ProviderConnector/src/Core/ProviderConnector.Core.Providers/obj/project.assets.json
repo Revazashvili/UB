@@ -23,6 +23,19 @@
         "runtime": {
           "bin/placeholder/ProviderConnector.Core.Models.dll": {}
         }
+      },
+      "ProviderConnector.Infrastructure.Builders/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ProviderConnector.Core.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Builders.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProviderConnector.Infrastructure.Builders.dll": {}
+        }
       }
     }
   },
@@ -50,11 +63,17 @@
       "type": "project",
       "path": "../ProviderConnector.Core.Models/ProviderConnector.Core.Models.csproj",
       "msbuildProject": "../ProviderConnector.Core.Models/ProviderConnector.Core.Models.csproj"
+    },
+    "ProviderConnector.Infrastructure.Builders/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ProviderConnector.Infrastructure.Builders/ProviderConnector.Infrastructure.Builders.csproj",
+      "msbuildProject": "../../Infrastructure/ProviderConnector.Infrastructure.Builders/ProviderConnector.Infrastructure.Builders.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ProviderConnector.Core.Models >= 1.0.0"
+      "ProviderConnector.Core.Models >= 1.0.0",
+      "ProviderConnector.Infrastructure.Builders >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -95,6 +114,9 @@
           "projectReferences": {
             "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Core\\ProviderConnector.Core.Models\\ProviderConnector.Core.Models.csproj": {
               "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Core\\ProviderConnector.Core.Models\\ProviderConnector.Core.Models.csproj"
+            },
+            "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Builders\\ProviderConnector.Infrastructure.Builders.csproj": {
+              "projectPath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Infrastructure\\ProviderConnector.Infrastructure.Builders\\ProviderConnector.Infrastructure.Builders.csproj"
             }
           }
         }
