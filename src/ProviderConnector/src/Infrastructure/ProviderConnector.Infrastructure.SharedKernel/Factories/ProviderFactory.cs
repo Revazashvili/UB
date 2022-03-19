@@ -21,16 +21,16 @@ public interface IProviderFactory
 
 public class ProviderFactory : IProviderFactory
 {
-    private readonly ITypeBroker _typeBroker;
+    private readonly ITypeProvider _typeProvider;
 
-    public ProviderFactory(ITypeBroker typeBroker)
+    public ProviderFactory(ITypeProvider typeProvider)
     {
-        _typeBroker = typeBroker;
+        _typeProvider = typeProvider;
     }
 
     public IProvider CreateProvider(int providerId)
     {
-        foreach (var type in _typeBroker.GetAllTypeWithProviderAttribute())
+        foreach (var type in _typeProvider.GetAllTypeWithProviderAttribute())
         {
             var providerAttribute = (ProviderAttribute)type.GetCustomAttribute(typeof(ProviderAttribute))!;
             if (providerAttribute.ProviderId == providerId)

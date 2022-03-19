@@ -14,7 +14,7 @@ public static class ServiceCollectionExtensions
     /// </summary>
     public static IServiceCollection AddProviderFactory(this IServiceCollection services)
     {
-        services.AddScoped<ITypeBroker, TypeBroker>();
+        services.AddScoped<ITypeProvider, TypeProvider>();
         services.AddScoped<IProviderFactory, ProviderFactory>();
         return services;
     }

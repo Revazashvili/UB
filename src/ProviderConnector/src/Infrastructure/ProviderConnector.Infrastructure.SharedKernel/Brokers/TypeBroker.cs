@@ -6,7 +6,7 @@ namespace ProviderConnector.Infrastructure.SharedKernel.Brokers;
 /// <summary>
 ///     Broker interface for types.
 /// </summary>
-public interface ITypeBroker
+public interface ITypeProvider
 {
     /// <summary>
     ///     Return all type with <see cref="ProviderAttribute" /> in executing assembly.
@@ -17,7 +17,7 @@ public interface ITypeBroker
     IEnumerable<Type> GetAllTypeWithProviderAttribute();
 }
 
-public class TypeBroker : ITypeBroker
+public class TypeProvider : ITypeProvider
 {
     public IEnumerable<Type> GetAllTypeWithProviderAttribute()
     {

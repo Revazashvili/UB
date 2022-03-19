@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0USle7d1IEveGloyb3ajs6OT5b1VjZ31nXSAIk3HMUHxPqit3O9+fZJJ5hEtUsuoKOtHob/CYaKVn9mKuYip2Q==",
+  "dgSpecHash": "2/YhvodmxBZ0qaBt2FJr2IeiowHypMQUB7OgS/PdxmYPw+a8RYEqGOr8uISPxPKpYvRfAMTCSIxl+C294aIFTQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\NetCore\\UB\\src\\ProviderConnector\\src\\Core\\ProviderConnector.Core.Providers\\ProviderConnector.Core.Providers.csproj",
+  "projectFilePath": "/home/revazashvili/dotnet/UB/src/ProviderConnector/src/Core/ProviderConnector.Core.Providers/ProviderConnector.Core.Providers.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\levan\\.nuget\\packages\\forbid\\1.0.4\\forbid.1.0.4.nupkg.sha512"
+    "/home/revazashvili/.nuget/packages/forbid/1.0.4/forbid.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }
