@@ -1,42 +1,23 @@
 ﻿using System.Reflection;
 using ProviderConnector.Core.Providers.Attributes;
-using ProviderConnector.Core.Providers.Exceptions;
 using ProviderConnector.Core.Providers.Interfaces;
 using ProviderConnector.Infrastructure.SharedKernel.Brokers;
 
 namespace ProviderConnector.Infrastructure.SharedKernel.Factories;
 
-/// <summary>
-///     Factory for creating <see cref="IProvider" /> objects.
-/// </summary>
 public interface IProviderFactory
 {
-    /// <summary>
-    ///     Creates <see cref="IProvider" /> instance based on the provider identifier.
-    /// </summary>
-    /// <param name="providerId">The provider identifier.</param>
-    /// <returns><see cref="IProvider" /> instance.</returns>
     IProvider CreateProvider(int providerId);
 }
 
 public class ProviderFactory : IProviderFactory
 {
     private readonly ITypeProvider _typeProvider;
+    public ProviderFactory(ITypeProvider typeProvider) => _typeProvider = typeProvider;
 
-    public ProviderFactory(ITypeProvider typeProvider)
-    {
-        _typeProvider = typeProvider;
-    }
-
-    public IProvider CreateProvider(int providerId)
-    {
-        foreach (var type in _typeProvider.GetAllTypeWithProviderAttribute())
-        {
-            var providerAttribute = (ProviderAttribute)type.GetCustomAttribute(typeof(ProviderAttribute))!;
-            if (providerAttribute.ProviderId == providerId)
-                return (IProvider)Activator.CreateInstance(type)!;
-        }
-
-        throw new ProviderNotCreatedException();
-    }
+    public IProvider CreateProvider(int providerId) =>
+        _typeProvider.GetAllTypeWithProviderAttribute()
+            .Where(type => (type.GetCustomAttribute(typeof(ProviderAttribute)) as ProviderAttribute)!.ProviderId == providerId)
+            .Select(type => (IProvider)Activator.CreateInstance(type)!)
+            .FirstOrDefault()!;
 }
