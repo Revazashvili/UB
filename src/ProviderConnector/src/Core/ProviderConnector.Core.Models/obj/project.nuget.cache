@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CYH2hq8zBXXUltuxwf4AJwygEsHc5mn0DQblYZ7qkqQrAkIdRLJbWFYT460ca9PhcYybhE0EQZS7EBAN10X/eg==",
+  "dgSpecHash": "9zGQeFPC7FYekC1Et9QgtGztnxho6op22q8UZJI5A6REQA1B7NuG0PgSf8fQRbjZarKkyrRS6V7oUYmUSthNNQ==",
   "success": true,
   "projectFilePath": "/home/revazashvili/dotnet/UB/src/ProviderConnector/src/Core/ProviderConnector.Core.Models/ProviderConnector.Core.Models.csproj",
   "expectedPackageFiles": [

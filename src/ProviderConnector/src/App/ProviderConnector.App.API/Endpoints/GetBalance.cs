@@ -22,7 +22,7 @@ public class GetBalance : EndpointBaseAsync
 
     [HttpGet]
     [SwaggerOperation(Summary = "Return Provider balance.", OperationId = "Balance", Tags = new[] { "Balance" })]
-    public override async Task<ActionResult<IEnumerable<GetBalanceResponse>>> HandleAsync(GetBalanceRequest request,
+    public override async Task<ActionResult<IEnumerable<GetBalanceResponse>>> HandleAsync([FromQuery] GetBalanceRequest request,
         CancellationToken cancellationToken = new()) =>
         Ok(await _mediator.Send(new GetBalanceQuery(request), cancellationToken));
 }

@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.103/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -117,7 +117,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.103/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -173,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

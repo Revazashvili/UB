@@ -8,6 +8,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace ProviderConnector.App.API.Endpoints;
 
+[Route("api/pay")]
 public class Pay : EndpointBaseAsync
     .WithRequest<PaymentRequest>
     .WithActionResult<PaymentResponse>
